@@ -89,7 +89,7 @@
         baseAndS: baseAndS {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <280>;
             quick-tap-ms = <280>;
             bindings = <&kp>, <&kp>;
