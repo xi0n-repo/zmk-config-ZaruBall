@@ -15,7 +15,7 @@
 #define RAISE    3
 #define ADJUST   4
 #define SCROLL   2
-#define RIGHT    5
+#define UPPER    5
 
 // スクロール量の設定
 
@@ -198,8 +198,8 @@
 
         // Extra layer can be added in ZMK STUDIO
 
-        right_layer {
-            display-name = "Right";
+        upper_layer {
+            display-name = "Upper";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
 &kp ESCAPE  &none   &kp F2          &kp F3          &kp F4           &kp F5                    &trans  &trans  &trans  &trans             &kp F6  &kp F7     &kp F8     &kp F9  &kp F10  &kp F12
