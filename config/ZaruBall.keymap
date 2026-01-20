@@ -15,6 +15,7 @@
 #define RAISE    3
 #define ADJUST   4
 #define SCROLL   2
+#define RIGHT    5
 
 // スクロール量の設定
 
@@ -23,7 +24,7 @@
 &trackball_listener {
     input-processors = <
                          &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)
-                         &zip_temp_layer MOUSE 700
+                         &zip_temp_layer MOUSE 600
     >;
 
     scroller {
@@ -197,7 +198,17 @@
 
         // Extra layer can be added in ZMK STUDIO
 
-        extra1 { status = "reserved"; };
+        right_layer {
+            display-name = "Right";
+            sensor-bindings = <&scroll_down_up>;
+            bindings = <
+&kp ESCAPE  &none           &kp F2            &kp F3     &kp F4     &kp F5            &trans  &trans  &trans  &trans             &kp F6         &kp F7    &kp F8          &kp F9     &kp F10  &kp F12
+&trans      &none           &none             &none      &none      &none             &trans  &trans  &trans  &trans             &none          &none     &kp UP_ARROW    &none      &none    &none
+&trans      &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mkp RCLK  &mkp LCLK  &none   &none     &trans  &trans  &trans  &trans    &none    &kp PAGE_UP    &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none    &none
+&trans      &none           &none             &none      &none      &none   &none     &trans  &trans  &trans  &trans    &none    &kp PAGE_DOWN  &kp HOME  &kp END         &none      &none    &none
+&trans      &trans                            &trans     &trans     &trans  &trans                                      &kp DEL  &trans                                                       &studio_unlock
+            >;
+        };
 
         extra2 { status = "reserved"; };
     };
