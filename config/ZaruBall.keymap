@@ -152,11 +152,11 @@
             display-name = "Mouse";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&to_layer_0 ESC           &to_layer_0 N1          &to_layer_0 N2            &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5                    &trans  &trans  &trans  &trans                     &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8     &to_layer_0 N9             &to_layer_0 N0                   &to_layer_0 EQUAL
-&to_layer_0 TAB           &to_layer_0 Q           &to_layer_0 W             &to_layer_0 E   &to_layer_0 R   &to_layer_0 T                     &trans  &trans  &trans  &trans                     &to_layer_0 Y   &to_layer_0 U   &to_layer_0 I      &to_layer_0 O              &to_layer_0 P                    &to_layer_0 MINUS
-&to_layer_0 LEFT_CONTROL  &baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &mkp RCLK       &mkp LCLK       &to_layer_0 G   &msc SCRL_UP      &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &to_layer_0 H   &mkp LCLK       &mkp RCLK          &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT SEMICOLON  &to_layer_0 SINGLE_QUOTE
-&to_layer_0 LSHIFT        &lt 3 Z                 &lt 5 X                   &to_layer_0 C   &to_layer_0 V   &to_layer_0 B   &msc SCRL_DOWN    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &to_layer_0 N   &to_layer_0 M   &to_layer_0 COMMA  &lt 5 PERIOD               &lt 2 SLASH                      &to_layer_0 BACKSLASH
-&trans                    &trans                                            &trans          &trans          &kp LEFT_SHIFT  &trans                                              &trans           &trans                                                                                                         &trans
+&to_layer_0 ESC   &to_layer_0 N1          &to_layer_0 N2            &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5                    &trans  &trans  &trans  &trans                     &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8     &to_layer_0 N9             &to_layer_0 N0                   &to_layer_0 EQUAL
+&to_layer_0 TAB   &to_layer_0 Q           &to_layer_0 W             &to_layer_0 E   &to_layer_0 R   &to_layer_0 T                     &trans  &trans  &trans  &trans                     &to_layer_0 Y   &to_layer_0 U   &to_layer_0 I      &to_layer_0 O              &to_layer_0 P                    &to_layer_0 MINUS
+&kp LEFT_CONTROL  &baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &mkp RCLK       &mkp LCLK       &to_layer_0 G   &msc SCRL_UP      &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &to_layer_0 H   &mkp LCLK       &mkp RCLK          &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT SEMICOLON  &to_layer_0 SINGLE_QUOTE
+&kp LSHIFT        &lt 3 Z                 &lt 5 X                   &to_layer_0 C   &to_layer_0 V   &to_layer_0 B   &msc SCRL_DOWN    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &to_layer_0 N   &to_layer_0 M   &to_layer_0 COMMA  &lt 5 PERIOD               &lt 2 SLASH                      &to_layer_0 BACKSLASH
+&trans            &trans                                            &trans          &trans          &kp LEFT_SHIFT  &trans                                              &trans           &trans                                                                                                         &trans
             >;
         };
 
