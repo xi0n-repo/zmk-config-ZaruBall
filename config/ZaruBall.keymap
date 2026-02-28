@@ -134,6 +134,22 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <45 46>;
+            layers = <0 4>;
+        };
+
+        right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <46 47>;
+            layers = <0 4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -144,7 +160,7 @@
 &kp GRAVE         &kp N1                  &kp N2                    &kp N3                      &kp N4                     &kp N5                           &kp KP_N7     &kp KP_N8  &kp KP_N9   &kp KP_DIVIDE                         &kp NUMBER_6  &kp N7  &kp N8     &kp N9                     &kp N0                      &kp EQUAL
 &kp TAB           &kp Q                   &kp W                     &kp E                       &kp R                      &kp T                            &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                       &kp Y         &kp U   &kp I      &kp O                      &kp P                       &kp MINUS
 &kp LEFT_CONTROL  &baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &kp D                       &kp F                      &kp G        &kp LEFT_BRACKET    &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp RIGHT_BRACKET  &kp H         &kp J   &kp K      &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT SEMI  &kp SQT
-&kp LSHFT         &lt 3 Z                 &lt 5 X                   &kp C                       &kp V                      &kp B        &kp F14             &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp F15            &kp N         &kp M   &kp COMMA  &lt 5 PERIOD               &lt 2 SLASH                 &kp BACKSLASH
+&kp LSHFT         &kp Z                   &lt 3 X                   &kp C                       &kp V                      &kp B        &kp F14             &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp F15            &kp N         &kp M   &kp COMMA  &lt 3 PERIOD               &lt 7 SLASH                 &kp BACKSLASH
 &kp LEFT_GUI      &kp C_MUTE                                        &baseAndS LEFT_CONTROL TAB  &baseAndS LEFT_ALT ESCAPE  &lt 4 SPACE  &lt 2 TAB                                                                   &lt 5 BACKSPACE    &lt 3 ENTER                                                                             &td1
             >;
         };
@@ -162,7 +178,7 @@
         };
 
         cursor {
-            display-name = "Lower";
+            display-name = "cursor";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
 &kp ESCAPE  &none           &kp F2            &kp F3     &kp F4     &kp F5              &trans  &trans  &trans  &trans                &kp F6         &kp F7    &kp F8          &kp F9           &kp F10  &kp F12
@@ -174,7 +190,7 @@
         };
 
         function {
-            display-name = "Raise";
+            display-name = "function";
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
             bindings = <
 &kp ESCAPE  &none           &kp F2            &kp F3     &kp F4     &kp F5            &trans  &trans  &trans  &trans                &kp F6   &kp F7     &kp F8     &kp F9             &kp F10         &kp F12
@@ -187,16 +203,16 @@
 
         number {
             bindings = <
-&trans  &trans        &trans        &trans           &trans        &trans                  &trans  &trans  &trans  &trans            &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5            &trans  &trans  &trans  &trans            &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp KP_PLUS   &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_EQUAL  &trans    &trans  &trans  &trans  &trans    &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &trans
-&trans  &trans        &trans        &trans           &trans        &trans        &trans    &trans  &trans  &trans  &trans    &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
-&trans  &trans                      &trans           &trans        &trans        &trans                                      &trans  &trans                                                                &trans
+&trans  &trans        &trans        &trans           &trans        &trans                  &trans  &trans  &trans  &trans                   &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5            &trans  &trans  &trans  &trans                   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp KP_PLUS   &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_SLASH  &kp KP_EQUAL  &trans    &trans  &trans  &trans  &trans    &trans         &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &trans
+&trans  &trans        &trans        &trans           &trans        &trans        &trans    &trans  &trans  &trans  &trans    &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &trans
+&trans  &trans                      &trans           &trans        &trans        &trans                                      &kp BACKSPACE  &trans                                                                &trans
             >;
         };
 
         mark {
-            display-name = "Upper";
+            display-name = "mark";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
 &kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH   &kp DOLLAR  &kp PERCENT              &trans  &trans  &trans  &trans                &kp LCTRL  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS               &kp EQUAL
@@ -208,7 +224,7 @@
         };
 
         wireless {
-            display-name = "Adjust";
+            display-name = "wireless";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans              &bt BT_CLR_ALL  &none  &none  &none  &none  &none
