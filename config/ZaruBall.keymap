@@ -160,7 +160,7 @@
             >;
         };
 
-        lower_layer {
+        cursor {
             display-name = "Lower";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
@@ -172,7 +172,7 @@
             >;
         };
 
-        raise_layer {
+        function {
             display-name = "Raise";
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
             bindings = <
@@ -184,7 +184,7 @@
             >;
         };
 
-        adjust_layer {
+        wireless {
             display-name = "Adjust";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
@@ -198,7 +198,7 @@
 
         // Extra layer can be added in ZMK STUDIO
 
-        upper_layer {
+        mark {
             display-name = "Upper";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
