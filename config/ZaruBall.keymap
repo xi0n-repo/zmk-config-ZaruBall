@@ -144,7 +144,7 @@
 &kp TAB           &kp Q                   &kp W                     &kp E                       &kp R                      &kp T                                        &kp KP_N4     &kp KP_N5  &kp KP_N6   &kp KP_MULTIPLY                       &kp Y         &kp U   &kp I      &kp O                      &kp P                       &kp MINUS
 &kp LEFT_CONTROL  &baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &kp D                       &kp F                      &kp G                    &kp LEFT_BRACKET    &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MINUS       &kp RIGHT_BRACKET  &kp H         &kp J   &kp K      &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT SEMI  &kp SQT
 &kp LSHFT         &lt 3 Z                 &lt 5 X                   &kp C                       &kp V                      &kp B                    &kp F14             &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_PLUS        &kp F15            &kp N         &kp M   &kp COMMA  &lt 5 PERIOD               &lt 2 SLASH                 &kp BACKSLASH
-&kp LEFT_GUI      &kp C_MUTE                                        &baseAndS LEFT_CONTROL TAB  &baseAndS LEFT_ALT ESCAPE  &SandS LEFT_SHIFT SPACE  &mo 2                                                                       &kp BACKSPACE      &lt 3 ENTER                                                                             &td1
+&kp LEFT_GUI      &kp C_MUTE                                        &baseAndS LEFT_CONTROL TAB  &baseAndS LEFT_ALT ESCAPE  &SandS LEFT_SHIFT SPACE  &mo 2                                                                       &lt 5 BACKSPACE    &lt 3 ENTER                                                                             &td1
             >;
         };
 
