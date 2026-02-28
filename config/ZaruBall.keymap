@@ -11,11 +11,12 @@
 
 #define BASE     0
 #define MOUSE    1
-#define LOWER    2
-#define RAISE    3
-#define ADJUST   4
-#define SCROLL   2
-#define UPPER    5
+#define CURSOR   2
+#define FUNCTION 3
+#define NUMBER   4
+#define MARK     5
+#define WIRELESS 6
+#define SCROLL   7
 
 // スクロール量の設定
 
@@ -28,7 +29,7 @@
     >;
 
     scroller {
-        layers = <SCROLL>;
+        layers = <CURSOR SCROLL>;
         input-processors = <
                             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)
                             &zip_xy_scaler 1 20
@@ -43,7 +44,7 @@
 
         tri_layer {
             if-layers = <2 3>;
-            then-layer = <4>;
+            then-layer = <6>;
         };
     };
 };
