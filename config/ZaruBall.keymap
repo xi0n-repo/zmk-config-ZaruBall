@@ -176,11 +176,11 @@
             display-name = "Raise";
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
             bindings = <
-&kp ESCAPE  &none           &kp F2            &kp F3     &kp F4     &kp F5                             &trans  &trans  &trans  &trans                &kp F6         &kp F7          &kp F8          &kp F9            &kp F10            &kp F12
-&trans      &none           &none             &none      &none      &none                              &trans  &trans  &trans  &trans                &kp F12        &none           &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans      &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mkp RCLK  &mkp LCLK  &msc SCRL_UP    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &none       &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &none              &none
-&trans      &none           &none             &none      &none      &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &none       &kp PAGE_DOWN  &kp HOME        &kp END         &none             &none              &none
-&trans      &trans                            &trans     &trans     &trans          &trans                                               &kp DELETE  &trans                                                                              &trans
+&kp ESCAPE  &none           &kp F2            &kp F3     &kp F4     &kp F5                             &trans  &trans  &trans  &trans                &kp F6         &kp F7          &kp F8          &kp F9           &kp F10  &kp F12
+&trans      &none           &none             &none      &none      &none                              &trans  &trans  &trans  &trans                &kp F12        &none           &kp UP_ARROW    &none            &none    &none
+&trans      &kp LEFT_SHIFT  &kp LEFT_CONTROL  &mkp RCLK  &mkp LCLK  &msc SCRL_UP    &msc SCRL_LEFT     &trans  &trans  &trans  &trans    &none       &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &none
+&trans      &none           &none             &none      &none      &msc SCRL_DOWN  &msc SCRL_RIGHT    &trans  &trans  &trans  &trans    &none       &kp PAGE_DOWN  &kp HOME        &kp END         &none            &none    &none
+&trans      &trans                            &trans     &trans     &trans          &trans                                               &kp DELETE  &trans                                                                   &trans
             >;
         };
 
@@ -212,11 +212,11 @@
 
         SCROLL {
             bindings = <
-&trans  &trans         &trans                  &trans              &trans                   &trans                    &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LG(D))  &kp LG(LC(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                    &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans          &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans                  &trans              &trans                   &kp LC(LG(F4))  &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                 &trans              &trans                   &trans          &trans                                      &trans  &trans                                  &trans
+&trans  &trans          &trans                                 &trans              &trans                   &trans                    &trans  &trans  &trans  &trans            &trans         &trans          &trans          &trans           &trans  &trans
+&trans  &kp LC(LG(D))   &kp LG(LC(LEFT_ARROW))                 &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                    &trans  &trans  &trans  &trans            &trans         &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp LEFT_SHIFT  &baseAndS LEFT_CONTROL LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans          &trans    &trans  &trans  &trans  &trans    &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans          &trans                                 &trans              &trans                   &kp LC(LG(F4))  &trans    &trans  &trans  &trans  &trans    &trans  &kp PAGE_DOWN  &kp HOME        &kp END         &trans           &trans  &trans
+&trans  &trans                                                 &trans              &trans                   &trans          &trans                                      &trans  &trans                                                                  &trans
             >;
         };
     };
