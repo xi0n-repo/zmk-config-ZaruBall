@@ -203,7 +203,7 @@
             sensor-bindings = <&scroll_down_up>;
             bindings = <
 &kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH      &kp DOLLAR  &kp PERCENT              &trans  &trans  &trans  &trans                &kp LCTRL  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS               &kp MINUS
-&trans      &none            &none             &kp UP_ARROW  &none       &none                    &trans  &trans  &trans  &trans                &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON                      &kp SQT                             &kp EQUAL
+&trans      &kp EXCLAMATION  &kp AT_SIGN       &kp HASH      &kp DOLLAR  &kp PERCENT              &trans  &trans  &trans  &trans                &kp LCTRL  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS               &kp EQUAL
 &trans      &kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp MINUS     &kp EQUAL   &kp PAGE_UP    &none     &trans  &trans  &trans  &trans    &mkp MB4    &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &baseAndS RIGHT_CONTROL SEMICOLON  &baseAndS RIGHT_SHIFT SINGLE_QUOTE  &kp BACKSLASH
 &trans      &none            &none             &kp HOME      &kp END     &kp PAGE_DOWN  &none     &trans  &trans  &trans  &trans    &mkp MB5    &none      &none             &none              &none                              &kp BACKSLASH                       &none
 &trans      &trans                             &trans        &trans      &trans         &trans                                      &kp DELETE  &trans                                                                                                                 &studio_unlock
