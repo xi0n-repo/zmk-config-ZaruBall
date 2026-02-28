@@ -210,6 +210,14 @@
             >;
         };
 
-        extra2 { status = "reserved"; };
+        SCROLL {
+            bindings = <
+&trans  &trans         &trans                  &trans              &trans                   &trans                    &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(LG(D))  &kp LG(LC(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                    &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans          &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans                  &trans              &trans                   &kp LC(LG(F4))  &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                                 &trans              &trans                   &trans          &trans                                      &trans  &trans                                  &trans
+            >;
+        };
     };
 };
