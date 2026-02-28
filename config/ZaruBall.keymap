@@ -28,6 +28,11 @@
                          &zip_temp_layer MOUSE 600
     >;
 
+precision_mode {
+        layers = <NUMBER>; 
+        input-processors = <&zip_xy_scaler_precision 1 3>;
+    };
+
     scroller {
         layers = <CURSOR SCROLL>;
         input-processors = <
@@ -45,6 +50,18 @@
         tri_layer {
             if-layers = <2 3>;
             then-layer = <8>;
+        };
+    };
+};
+
+/ {
+    input_processors {
+        /* 精密操作用のスケーラー：track-remaindersを外し、切り替え時の応答性を向上 */
+        zip_xy_scaler_precision: zip_xy_scaler_precision {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>, <INPUT_REL_Y>;
         };
     };
 };
