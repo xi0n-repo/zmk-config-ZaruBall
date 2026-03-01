@@ -29,7 +29,10 @@
 
     precision_mode {
         layers = <NUMBER>;
-        input-processors = <&zip_xy_scaler_precision 1 3>;
+        input-processors = <
+                         &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)
+                         &zip_xy_scaler_precision 1 3
+    >;
     };
 
     scroller {
