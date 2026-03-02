@@ -192,7 +192,7 @@
 &to_layer_0 ESC   &to_layer_0 N1          &to_layer_0 N2            &to_layer_0 N3  &to_layer_0 N4  &to_layer_0 N5                    &trans  &trans  &trans  &trans                     &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8     &to_layer_0 N9             &to_layer_0 N0                   &to_layer_0 EQUAL
 &to_layer_0 TAB   &to_layer_0 Q           &to_layer_0 W             &to_layer_0 E   &to_layer_0 R   &to_layer_0 T                     &trans  &trans  &trans  &trans                     &to_layer_0 Y   &to_layer_0 U   &to_layer_0 I      &to_layer_0 O              &to_layer_0 P                    &to_layer_0 MINUS
 &kp LEFT_CONTROL  &baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &mkp RCLK       &mkp LCLK       &to_layer_0 G   &msc SCRL_UP      &trans  &trans  &trans  &trans    &msc SCRL_LEFT   &to_layer_0 H   &mkp LCLK       &mkp RCLK          &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT SEMICOLON  &to_layer_0 SINGLE_QUOTE
-&kp LSHIFT        &lt 3 Z                 &lt 5 X                   &to_layer_0 C   &to_layer_0 V   &to_layer_0 B   &msc SCRL_DOWN    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &to_layer_0 N   &to_layer_0 M   &to_layer_0 COMMA  &lt 5 PERIOD               &lt 2 SLASH                      &to_layer_0 BACKSLASH
+&kp LSHIFT        &kp Z                   &lt 3 X                   &to_layer_0 C   &to_layer_0 V   &to_layer_0 B   &msc SCRL_DOWN    &trans  &trans  &trans  &trans    &msc SCRL_RIGHT  &to_layer_0 N   &to_layer_0 M   &to_layer_0 COMMA  &lt 3 PERIOD               &lt 7 SLASH                      &to_layer_0 BACKSLASH
 &trans            &trans                                            &trans          &trans          &trans          &trans                                              &trans           &trans                                                                                                         &trans
             >;
         };
@@ -235,8 +235,8 @@
             display-name = "mark";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH   &kp DOLLAR  &kp PERCENT              &trans  &trans  &trans  &trans                &kp LCTRL  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS               &kp EQUAL
-&trans      &kp EXCLAMATION  &kp AT_SIGN       &kp HASH   &kp DOLLAR  &kp PERCENT              &trans  &trans  &trans  &trans                &kp LCTRL  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS               &kp MINUS
+&kp ESCAPE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH   &kp DOLLAR  &kp PERCENT              &trans  &trans  &trans  &trans                &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS               &kp EQUAL
+&trans      &kp EXCLAMATION  &kp AT_SIGN       &kp HASH   &kp DOLLAR  &kp PERCENT              &trans  &trans  &trans  &trans                &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS               &kp MINUS
 &trans      &kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp MINUS  &kp EQUAL   &kp PAGE_UP    &none     &trans  &trans  &trans  &trans    &mkp MB4    &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &baseAndS RIGHT_CONTROL SEMICOLON  &baseAndS RIGHT_SHIFT SINGLE_QUOTE  &kp BACKSLASH
 &trans      &none            &none             &kp HOME   &kp END     &kp PAGE_DOWN  &none     &trans  &trans  &trans  &trans    &mkp MB5    &none      &none             &none              &none                              &kp BACKSLASH                       &none
 &trans      &trans                             &trans     &trans      &trans         &trans                                      &kp DELETE  &trans                                                                                                                 &studio_unlock
