@@ -223,11 +223,11 @@
 
         number {
             bindings = <
-&trans  &trans        &trans        &trans           &trans        &trans                  &trans  &trans  &trans  &trans                   &trans        &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5            &trans  &trans  &trans  &trans                   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp KP_PLUS   &kp KP_MINUS  &kp KP_MULTIPLY  &kp KP_SLASH  &kp EQUAL     &trans    &trans  &trans  &trans  &trans    &trans         &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &trans
-&trans  &trans        &trans        &trans           &trans        &trans        &trans    &trans  &trans  &trans  &trans    &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT       &trans
-&trans  &trans                      &trans           &trans        &trans        &trans                                      &kp BACKSPACE  &kp ENTER                                                             &kp RIGHT_ALT
+&trans  &trans                        &trans                           &trans           &trans        &trans                  &trans  &trans  &trans  &trans                   &trans        &trans        &trans        &trans                            &trans           &trans
+&trans  &kp NUMBER_1                  &kp NUMBER_2                     &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5            &trans  &trans  &trans  &trans                   &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                      &kp NUMBER_0     &trans
+&trans  &baseAndS LEFT_SHIFT KP_PLUS  &baseAndS LEFT_CONTROL KP_MINUS  &kp KP_MULTIPLY  &kp KP_SLASH  &kp EQUAL     &trans    &trans  &trans  &trans  &trans    &trans         &trans        &kp NUMBER_4  &kp NUMBER_5  &baseAndS RIGHT_CONTROL NUMBER_6  &kp RIGHT_SHIFT  &trans
+&trans  &trans                        &trans                           &trans           &trans        &trans        &trans    &trans  &trans  &trans  &trans    &trans         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                      &kp DOT          &trans
+&trans  &trans                                                         &trans           &trans        &trans        &trans                                      &kp BACKSPACE  &kp ENTER                                                                                    &kp RIGHT_ALT
             >;
         };
 
