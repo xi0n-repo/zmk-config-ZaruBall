@@ -168,6 +168,21 @@
             key-positions = <46 47>;
             layers = <0 4>;
         };
+
+        bs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <29 30>;
+        };
+
+        lang1 {
+            bindings = <&kp LANG1>;
+            key-positions = <28 29>;
+        };
+
+        lang2 {
+            bindings = <&kp LANG2>;
+            key-positions = <18 19>;
+        };
     };
 
     keymap {
